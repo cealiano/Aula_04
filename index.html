@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body background="Imagens/pexels-codioful-(formerly-gradienta)-7130560.jpg">
+
+    <br>
+    <br>
+    <p align="center">
+        <font color="white" size="800" face="arial"><b>VAGASONLINE.COM</b></font>
+    </p>
+
+    <br>
+    <br>
+
+    <h1 align="center" >
+        <font face="arial" color="purple" size="800">Cadastre-se</font>
+    </h1>
+
+    <font face="arial" color="white">
+        <strong>
+            <table width="800" align="center">
+
+                <tr>
+                    <td>
+                        <form action="enviar.php" method="post" name="cadastro">
+                        <table>
+                            <tr>
+                                <td>
+                                    <fieldset>
+                                        <legend>
+                                            <font color="pink">Informe seus dados:</font>
+                                        </legend>
+
+                                        <form action="enviar.php" method="post" name="cadastro">
+
+                                            <table cellpading="5" cellspacing="" align="center">
+
+                                                <tr>
+                                                    <td><label>Nome:</label></td>
+                                                    <td><input type="text" id="name" name="data_nasc" size="30"
+                                                            maxlength="80" placeholder="Digite seu nome completo."
+                                                            required></td>
+
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td><label>Data de nascimento:</label></td>
+                                                    <td><input type="date" id="data_nasc" name="data_nasc" required>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>E-mail:</label></td>
+                                                    <td><input type="email" id="email" name="email" maxlength="30"
+                                                            size="30" placeholder="Digite seu e-mail." required></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>Crie sua senha:</label></td>
+                                                    <td><input type="password" maxlength="8" name="senha" id="senha"
+                                                            placeholder="Crie sua senha." required></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>CPF:</label></td>
+                                                    <td><input type="number" id="cpf" name="cpf"
+                                                            placeholder="Digite seu CPF (Somente números)."
+                                                            max="99999999999" size="30"></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>Sexo:</label></td>
+                                                    <td><input type="radio" id="sexo" name="sexo" value="Masculino"
+                                                            required>
+                                                        <label>Masculino</label>
+                                                        <input type="radio" id="sexo" name="sexo" value="Feminino"
+                                                            required>
+                                                        <label>Feminino</label>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>Estado:</label></td>
+                                                    <td>
+                                                        <select name="estado" id="estado" required>
+                                                            <option value="" selected="selected">--Selecione--</option>
+                                                            <option value="AC">AC</option>
+                                                            <option value="AL">AL</option>
+                                                            <option value="AM">AM</option>
+                                                            <option value="AP">AP</option>
+                                                            <option value="CE">DF</option>
+                                                            <option value="ES">ES</option>
+                                                            <option value="GO">GO</option>
+                                                            <option value="MA">MA</option>
+                                                            <option value="MT">MT</option>
+                                                            <option value="MS">MS</option>
+                                                            <option value="MG">MG</option>
+                                                            <option value="PA">PA</option>
+                                                            <option value="PB">PB</option>
+                                                            <option value="PR">PR</option>
+                                                            <option value="PE">PE</option>
+                                                            <option value="PI">PI</option>
+                                                            <option value="RJ">RJ</option>
+                                                            <option value="RN">RN</option>
+                                                            <option value="RS">RS</option>
+                                                            <option value="RO">RO</option>
+                                                            <option value="RR">RR</option>
+                                                            <option value="SC">SC</option>
+                                                            <option value="SP">SP</option>
+                                                            <option value="SE">SE</option>
+                                                            <option value="TO">TO</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>Telefone para contato:</label></td>
+                                                    <td><input type="number" size="20" id="numero" name="numero"
+                                                            placeholder="(DDD) 99999-9999" max="99 999999999"></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>CEP:</label></td>
+                                                    <td><input type="number" id="cep" name="cep"
+                                                            placeholder="Digite seu CEP." required></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>Endereço:</label></td>
+                                                    <td><input type="text" id="endereco" name="endereco"
+                                                            placeholder="Digite seu endereço" required></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>Complemento:</label></td>
+                                                    <td> <textarea name="coment" id="coment" cols="50" rows="2"
+                                                            maxlength="100" required></textarea></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><label>Código de usuário</label></td>
+                                                    <td><input type="text" name="cod" id="cod" size="10" maxlength="10"
+                                                            placeholder="Código de usuário" disabled></td>
+                                                </tr>
+
+                                        </form>
+                        </table>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <details>
+                                <summary>
+                                    <font color="pink">Experiências profissionais: </font><br>
+                                </summary>
+                                <table align="center">
+                                    <tr>
+                                        <td> <label> Você possui alguma experiência profissional?</label></td>
+                                        <td><input type="radio" name="sim" id="sim" value="Sim" required>
+                                            <label>Sim</label>
+                                        </td>
+                                        <td><input type="radio" name="sim" id="sim" value="Não">
+                                            <label>Não</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label>Se sim, descreva como foi:</label></td>
+                                        <td><input type="textarea" name="coment" id="coment" rows="5" maxlength="250">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label> Formação escolar:</label></td>
+                                        <td>
+                                            <select name="formacao" id="formacao" required>
+                                                <option value="" selected="selected">--Selecione--</option>
+                                                <option value="Ensinofundamental">Ensino Fundamental</option>
+                                                <option value="Ensinofundamental">Ensino Fundamental incompleto</option>
+                                                <option value="Ensinotecnico">Ensino Tecnico</option>
+                                                <option value="Ensinomedio">Ensino Médio</option>
+                                                <option value="Ensinomedio">Ensino Médio incompleto</option>
+                                                <option value="Ensinosuperior">Ensino Superior</option>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><label>Anexe seu currículo:</label></td>
+                                        <td><input type="file" name="curriculo" id="curriculo" required></td>
+                                    </tr>
+
+
+                                </table>
+                            </details>
+                        </fieldset>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>
+                                <font color="pink">Outras informações:</font>
+                            </legend>
+                            <table>
+                                <tr>
+                                    <td><label>Selecione os setores que são do seu interesse:</label></td>
+                                    <td><input type="checkbox" id="adm" value="adm" name="adm">Administrativo
+
+                                        <br><br>
+
+                                        <input type="checkbox" id="finan" name="finan" value="finan">Financeiro
+
+                                        <br><br>
+
+                                        <input type="checkbox" name="rh" id="rh" value="rh">Recursos Humanos (RH)
+
+                                        <br><br>
+
+                                        <input type="checkbox" name="com" id="com" value="com">Comercial
+
+                                        <br><br>
+
+                                        <input type="checkbox" name="op" id="op" value="op">Operacional ou de produção
+
+                                        <br><br>
+                                        <input type="checkbox" name="ti" id="ti" value="ti">Tecnologia da informação
+                                        (TI)
+
+                                        <br><br>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td><label>Classifique o quão satisfeito você está com o mercado de trabalho
+                                            atual:</label></td>
+                                    <td><input type="range" id="1" name="1" min="1" max="10" step="1"></td>
+                                </tr>
+
+
+                                <td><label>Classifique o quão disponivel você está para realizar um início
+                                        imediato:</label></td>
+                                <td><input type="range" id="1" name="1" min="1" max="10" step="1"></td>
+                </tr>
+
+
+                <td><label>Classifique quais suas expectativas de conseguir uma vaga pela nossa plataforma:</label></td>
+                <td><input type="range" id="1" name="1" min="1" max="10" step="1"></td>
+                </tr>
+
+                <td><label>Classifique o quanto nossa plataforma atendeu suas expectativas:</label></td>
+                <td><input type="range" id="1" name="1" min="1" max="10" step="1"></td>
+                </tr>
+
+                <td><label>Classifique o quão disposto você estaria para encontrar vagas em outras localidades</label>
+                </td>
+                <td><input type="range" id="1" name="1" min="1" max="10" step="1"></td>
+                </tr>
+
+
+                </tr>
+                </tr>
+            </table>
+            </fieldset>
+            </td>
+            </tr>
+
+
+            <tr>
+                <th  colspan="2"><input type="submit" id="enviar" name="enviar" value="ENVIAR DADOS" />
+                    <input
+                        type="reset" id="limpar" name="limpar" value="LIMPAR "></th>
+            </tr>
+            </table>
+        </form>
+            </td>
+            </tr>
+    </font>
+</body>
+
+</html>
